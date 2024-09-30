@@ -16,6 +16,7 @@ function scr_add_item(item,contable,type,qtd){
 			if slot[2] = type or slot[2] = "slot"{
 					cont = slot[1]+qtd
 					ds_grid_set(global.inventario,xx,yy,[item,cont,type])
+					return true
 					break
 			}
 		}
@@ -36,6 +37,7 @@ function scr_add_item(item,contable,type,qtd){
 			}
 			if slot[1] =0 and slot[2] = "slot"{
 					ds_grid_set(global.inventario,xx,yy,[item,contable,type])
+					return true
 					break
 			}
 		}

@@ -83,7 +83,10 @@ y+=vspd
 #region debug
 if(place_meeting(x,y,obj_item_father)){
 	_item = instance_nearest(x,y,obj_item_father)
-	scr_add_item(_item.item,_item.contable,_item._type,_item.qtd)
-	instance_destroy(_item)
+	a = scr_add_item(_item.item,_item.contable,_item._type,_item.qtd)
+	if a{
+		instance_destroy(_item)
+	}
+	
 }
 #endregion

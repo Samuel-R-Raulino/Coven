@@ -53,6 +53,9 @@ if(inv == true){
 			draw_set_font(fnt_pixel)
 			draw_text(_pix + distx+72,_piy+disty+72,slot[1])
 			draw_sprite_ext(spr_slot_selector,0,_pix+ curs_p_x*42*xscale,_piy+ curs_p_y*32*yscale,xscale,yscale,0,c_white,1)
+			
+			slot_atual = ds_grid_get(global.inventario,curs_p_x,curs_p_y) 
+			draw_sprite(slot_atual[0],0,0,0)
 		}
 	}
 }
