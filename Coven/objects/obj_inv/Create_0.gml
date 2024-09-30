@@ -11,3 +11,6 @@ for (var xx = 0; xx < ds_grid_width(global.inventario); xx++) {
     }
 }
 inv = false
+
+curs_p_x = 0
+curs_p_y = 0

@@ -1,4 +1,4 @@
-/// @description Inserir descrição aqui
+   /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 #region sprites
 var a = point_direction(x,y,mouse_x,mouse_y)
@@ -86,5 +86,4 @@ if(place_meeting(x,y,obj_item_father)){
 	scr_add_item(_item.item,_item.contable,_item._type,_item.qtd)
 	instance_destroy(_item)
 }
-show_debug_message(mouse_x,mouse_y)
 #endregion
